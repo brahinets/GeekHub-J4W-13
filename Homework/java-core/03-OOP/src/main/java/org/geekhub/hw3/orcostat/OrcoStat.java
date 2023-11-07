@@ -33,10 +33,8 @@ public class OrcoStat {
 
     public int getLosesInDollars() {
         int orcsDamage = 0;
-        for (Object o : this.individualOrcs) {
-            if (o instanceof Orc orc) {
-                orcsDamage += orc.getPrice();
-            }
+        for (Orc orc : this.individualOrcs) {
+            orcsDamage += orc.getPrice();
         }
 
         int techniquesDamage = 0;
