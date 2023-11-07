@@ -1,13 +1,22 @@
 package org.geekhub.hw3.orcostat.model;
 
-import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public interface Technique {
 
     Collection getEquipage();
 
     default java.util.Collection<Orc> getFullEquipage() {
-        throw new IllegalStateException("Not implemented");
+        Set<Orc> orcs = new HashSet<>();
+
+        for (Object o : getEquipage().getElements()) {
+            if (o instanceof Orc orc) {
+                orcs.add(orc);
+            }
+        }
+
+        return orcs;
     }
 
     int getPrice();

@@ -26,7 +26,7 @@ public class OrcoStat {
     public void smashTechnique(Technique technique) {
         this.technique.add(technique);
 
-        for (Object o : technique.getEquipage().getElements()) {
+        for (Object o : technique.getFullEquipage()) {
             if (o instanceof Orc orc) {
                 this.smashOrc(orc);
             }
