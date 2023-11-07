@@ -1,8 +1,14 @@
 package org.geekhub.hw3.orcostat.model;
 
+import java.util.ArrayList;
+
 public interface Technique {
 
     Collection getEquipage();
+
+    default java.util.Collection<Orc> getFullEquipage() {
+        throw new IllegalStateException("Not implemented");
+    }
 
     int getPrice();
 
