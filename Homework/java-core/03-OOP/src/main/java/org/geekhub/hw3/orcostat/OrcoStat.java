@@ -11,8 +11,8 @@ public class OrcoStat {
     private final Set<Technique> technique;
 
     public OrcoStat() {
-        this.individualOrcs = new HashSet();
-        this.technique = new HashSet();
+        this.individualOrcs = new HashSet<>();
+        this.technique = new HashSet<>();
     }
 
     public void smashOrc(Orc orc) {
