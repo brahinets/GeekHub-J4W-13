@@ -40,10 +40,8 @@ public class OrcoStat {
         }
 
         int techniquesDamage = 0;
-        for (Object t : this.technique) {
-            if (t instanceof Technique crashedTechnique) {
-                techniquesDamage += crashedTechnique.getPrice();
-            }
+        for (Technique crashedTechnique : this.technique) {
+            techniquesDamage += crashedTechnique.getPrice();
         }
 
         return orcsDamage + techniquesDamage;
