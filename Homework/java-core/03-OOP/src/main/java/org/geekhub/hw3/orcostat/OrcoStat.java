@@ -1,21 +1,22 @@
 package org.geekhub.hw3.orcostat;
 
-import org.geekhub.hw3.orcostat.model.Collection;
 import org.geekhub.hw3.orcostat.model.Orc;
-import org.geekhub.hw3.orcostat.model.SimpleCollection;
 import org.geekhub.hw3.orcostat.model.Technique;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class OrcoStat {
-    private final Collection individualOrcs;
-    private final Collection technique;
+    private final Set<Orc> individualOrcs;
+    private final Set<Technique> technique;
 
     public OrcoStat() {
-        this.individualOrcs = new SimpleCollection();
-        this.technique = new SimpleCollection();
+        this.individualOrcs = new HashSet();
+        this.technique = new HashSet();
     }
 
     public void smashOrc(Orc orc) {
-        if(orc.getPrice() < 0){
+        if (orc.getPrice() < 0) {
             throw new IllegalArgumentException("Orc is already dead");
         }
 
@@ -34,14 +35,14 @@ public class OrcoStat {
 
     public int getLosesInDollars() {
         int orcsDamage = 0;
-        for (Object o : this.individualOrcs.getElements()) {
+        for (Object o : this.individualOrcs) {
             if (o instanceof Orc orc) {
                 orcsDamage += orc.getPrice();
             }
         }
 
         int techniquesDamage = 0;
-        for (Object t : this.technique.getElements()) {
+        for (Object t : this.technique) {
             if (t instanceof Technique crashedTechnique) {
                 techniquesDamage += crashedTechnique.getPrice();
             }
