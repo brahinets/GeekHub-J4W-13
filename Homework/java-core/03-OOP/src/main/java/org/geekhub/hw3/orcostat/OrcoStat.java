@@ -3,12 +3,12 @@ package org.geekhub.hw3.orcostat;
 import org.geekhub.hw3.orcostat.model.Orc;
 import org.geekhub.hw3.orcostat.model.Technique;
 
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 
 public class OrcoStat {
-    private final Set<Orc> individualOrcs;
-    private final Set<Technique> technique;
+    private final Collection<Orc> individualOrcs;
+    private final Collection<Technique> technique;
 
     public OrcoStat() {
         this.individualOrcs = new HashSet<>();
