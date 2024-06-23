@@ -21,11 +21,11 @@
 | 17 | Practice 2                                   | 20.2.2024  | Online         |
 | 18 | REST, Swagger                                | 27.2.2024  | Online         |
 | 19 | Front End                                    | 5.3.2024   | Online         |
-| 20 | Microservices                                | 12.3.2024  |                |
-| 21 | Web Application Security                     | 19.3.2024  |                |
-| 22 | Spring Security                              | 26.3.2024  |                |
-| 23 | Integration Testing                          | 2.4.2024   |                |
-| 24 | Docker                                       | 9.4.2024   |                |
-| 25 | Course works preview                         | 16.4.2024  |                |
-| 26 | Hexagonal Architecture                       | 23.4.2024  |                |
-| 27 | Course works review                          | 30.4.2024  |                |
+| 20 | Web Application Security                     | 19.3.2024  | Offline/Online |
+| 21 | Spring Security                              | 26.3.2024  | Offline/Online |
+| 22 | Integration Testing                          | 2.4.2024   | Online         |
+| 23 | Docker                                       | 9.4.2024   | Online         |
+| 24 | Course works preview                         | 16.4.2024  | Online         |
+| 25 | QA Course works preview                      | 21.4.2024  | Online         |
+| 26 | Microservices                                | 26.3.2024  | Offline/Online |
+| 27 | Course works review                          | 30.4.2024  | Offline/Online |
